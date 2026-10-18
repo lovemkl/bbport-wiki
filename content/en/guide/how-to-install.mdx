@@ -1,0 +1,44 @@
+export const metadata = {
+  title: "How to Install the Bloodborne PC Port (bbport)",
+  description: "The step-by-step install guide for Bloodborne PC — bbport sources, prerequisites, setup, first boot into Yharnam and the fixes for first-run issues.",
+  category: "guide",
+  date: "2026-10-18",
+};
+
+Installing Bloodborne PC via the bbport is shorter than most AAA launchers make you wait, but the difference between a smooth first evening and a frustrating one is preparation — the unofficial nature of the port means a handful of decision points where the right choice saves real time. This guide walks the entire sequence for installing Bloodborne PC: sources and prerequisites, the setup steps in order, first boot, and the fixes for the issues that account for nearly all first-session trouble. Read it once before downloading; keep it open in the next tab while the install runs.
+
+## Sources: Where bbport Comes From
+
+The first rule of installing unofficial software: get it from the right place. The bbport circulates through the community channels that built and documented it — the project's own distribution points, amplified by the press coverage (Wccftech, NeoGAF, tech coverage) and the YouTube creators who demonstrated it in October 2026. The universal warning signs of a fake apply with full force here: anything calling itself the bbport that demands an installer wizard, an .exe from a random aggregator site, an account creation wall, or payment for what the community ships free — that is not the port. The real thing asks for none of these. Bookmark the working source on your first success; the fastest route back into Bloodborne PC is the one you have already verified. The legal reality deserves its sentence too: bbport is an unofficial project built on Sony's property without permission, existing in the same tolerated gray zone as preservation projects everywhere — know what you are installing, make your own informed choice, and this wiki documents without deciding for you.
+
+## Prerequisites
+
+The port's system requirements are refreshingly modest — Bloodborne PC reportedly runs well even on low-end hardware at 60 FPS, with mid-range GPUs like the RX 6650 XT reaching 100 FPS. The practical checklist: Windows 10 or 11 (a Linux port exists separately for the penguin faithful), a DirectX-capable GPU of almost any modern vintage, storage space for the game data (budget generously — Yharnam is a big city), and the runtime libraries the port's documentation names in its readme. One preparation step most guides understate: update your GPU drivers before installing Bloodborne PC, not after troubleshooting — a meaningful share of "the port runs badly" reports in week one traced to six-month-old drivers meeting a brand-new native build. Five minutes of driver update eliminates the most common first-run complaint before it exists.
+
+## The Install Sequence
+
+The steps from download to Hunter's Dream, in the order that causes the fewest problems:
+
+1. **Download the port from the verified community source.** Let it finish completely — partial downloads cause the classic "extracts but won't boot" failure. If the distribution comes as an archive, verify its size against the source's stated size before proceeding.
+
+2. **Extract to a simple, short path.** The classic advice that never stops being true: `C:\Games\bbport` style paths, no deep nesting, no unusual characters. Native ports of console codebases can be sensitive to long paths in ways ordinary PC games are not, and there is no upside to testing it.
+
+3. **Read the included readme or documentation.** Unofficial projects put their real documentation in the distribution — required runtimes, known issues, the specific first-boot quirks. Five minutes here is the highest-leverage reading of the entire install.
+
+4. **Run the port's setup or first-launch process.** The bbport ships with its own configuration for the PC options it adds — graphics settings, resolution, frame-rate behavior. Take a deliberate pass: resolution to your display, frame behavior to your preference (the performance guide covers the unlock in detail), and any QoL toggles the readme recommends as defaults.
+
+5. **First boot into Yharnam.** Expect the character creator and the opening cinematic — the game boots like the game, because the engine running is the game's engine. If the first boot includes one-time shader or initialization work that briefly stutters, let it finish: the second boot inherits the smoothed state.
+
+## First-Run Fixes
+
+The issues that account for nearly all first-session trouble with Bloodborne PC, each with its one-step fix. **Won't launch at all**: drivers first (see prerequisites), then the readme's runtime requirements, then run as administrator once — some distributions need the elevation to write their config on first launch. **Launches to black screen**: most often a resolution mismatch between the port's default and your display — delete or edit the generated config per the readme and let it regenerate. **Stutter in the opening hour**: distinguish first-boot initialization (normal, fades) from persistent stutter (usually a setting — the performance guide's troubleshooting table maps the causes). **Online features not connecting**: the matchmaking website is the port's online backbone — the online guide covers its setup and current state for Bloodborne PC hunters. **Antivirus quarantine**: unofficial executables trip heuristics because they are unsigned — that is expected behavior for a community project, not evidence of malice; whitelist from the verified source only.
+
+One more layer of honesty for the troubleshooting section, because Bloodborne PC is a living project and the fix landscape moves: the issues above are the stable taxonomy — launch, display, performance, online, antivirus — but the specific fixes within each category evolve as the port updates. The readme in your distribution and the project's community channels are the live sources for the current known-fix; this guide's taxonomy is the map that tells you which chapter to read. Hunters who internalize the five categories above diagnose in minutes what took the first-week community hours, because almost every report in the port's early days filed cleanly under one of these five headings. The sixth category — "none of the above, something genuinely new" — is the one the project's issue channels want to hear about, and the one this wiki's update cycle exists to absorb: Bloodborne PC's rough edges get polished in public, and every hunter who reports one is polishing the door for the next.
+
+## Session Habits Worth Forming
+
+Three habits that make every Bloodborne PC session better. Back up your saves after the first hour and periodically after — the port is a living project whose updates can touch save formats, and saves are the one thing in gaming you cannot re-download. Keep the readme accessible — the community updates it as issues surface, and the newest known-fix is always there first. And check the project's channels on the update cycle — the bbport improved measurably in its first weeks, and the version you installed last month is not the version you will install next month. The port is the community's gift to itself; treating its upkeep as a partnership rather than a product is both the honest posture and the one that gets the best experience. See you in Yharnam, hunter.
+
+## The First Evening, Planned
+
+For hunters installing tonight, the shape of a good first session with Bloodborne PC: the first hour is setup and calibration — install deliberately, walk the settings suite once (the controls guide's day-one pass), test the controller or mouse with the character creator's blank canvas, and calibrate your expectations to the frame rate you unlocked rather than the one you remember. The second hour belongs to Central Yharnam — the opening streets, the first mob encounters, the combat's grammar arriving by feel — with the knowledge that the port's polish is deepest exactly here, where you are. Save after the first lantern, back up after the first hour, and stop while you're ahead rather than deep in a boss attempt at 2 AM. The second session goes further; the third goes further still; and somewhere around the third or fourth, the muscle memory from 2015 (or the fresh eyes of a first-timer) meets the frame rate Bloodborne always deserved, and the game clicks at a level the console never showed you. That click is what the eleven-year wait and the community's reverse-engineering were both for — and it is waiting one install away.

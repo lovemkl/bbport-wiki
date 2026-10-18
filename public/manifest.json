@@ -1,0 +1,13 @@
+{
+  "name": "Bloodborne PC Wiki",
+  "short_name": "Bloodborne PC",
+  "description": "Fan wiki for the bbport — the unofficial Bloodborne PC port with native Windows options, 100FPS performance, online play, mouse controls and the shadPS4 alternative.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e0a0a",
+  "theme_color": "#8b1a1a",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
