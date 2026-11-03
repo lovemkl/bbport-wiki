@@ -1,0 +1,27 @@
+# Bloodborne PC Wiki
+
+> Fan wiki for the bbport — the unofficial Bloodborne PC port with native Windows options, 100FPS performance, online play, mouse controls and the shadPS4 alternative.
+
+Site: https://bbport.wiki
+
+## Guides
+
+- Bloodborne PC Guide — the complete orientation: https://bbport.wiki/guide/bloodborne-pc-guide
+- How to Install — download to first boot: https://bbport.wiki/guide/how-to-install
+- Online Play — co-op and invasions: https://bbport.wiki/guide/online-play
+- Controls & Settings — mouse, keyboard, controller: https://bbport.wiki/guide/controls-and-settings
+
+## Features
+
+- Performance & FPS — 100 FPS and beyond: https://bbport.wiki/features/performance-and-fps
+- QoL Improvements — what the port fixes: https://bbport.wiki/features/qol-improvements
+
+## Comparisons
+
+- bbport vs shadPS4 — native port vs emulator: https://bbport.wiki/comparisons/bbport-vs-shadps4
+
+## FAQ
+
+- Bloodborne PC FAQ — the straight answers: https://bbport.wiki/faq/faq
+
+Independent fan wiki. Not affiliated with FromSoftware or Sony.

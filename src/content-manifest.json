@@ -1,0 +1,308 @@
+{
+ "generatedAt": "2026-11-03T14:53:23.148Z",
+ "items": [
+  {
+   "contentType": "comparisons",
+   "slug": "bbport-vs-shadps4",
+   "title": "bbport vs shadPS4: Two Roads to Bloodborne PC",
+   "date": "2026-10-18",
+   "category": "comparisons",
+   "headings": [
+    {
+     "id": "the-two-architectures",
+     "text": "The Two Architectures",
+     "level": 2
+    },
+    {
+     "id": "performance-and-hardware",
+     "text": "Performance and Hardware",
+     "level": 2
+    },
+    {
+     "id": "completeness-and-features",
+     "text": "Completeness and Features",
+     "level": 2
+    },
+    {
+     "id": "which-road-for-which-hunter",
+     "text": "Which Road for Which Hunter",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "faq",
+   "slug": "faq",
+   "title": "Bloodborne PC FAQ",
+   "date": "2026-10-18",
+   "category": "faq",
+   "headings": [
+    {
+     "id": "is-there-an-official-bloodborne-pc-version",
+     "text": "Is There an Official Bloodborne PC Version?",
+     "level": 2
+    },
+    {
+     "id": "what-is-the-bbport",
+     "text": "What Is the bbport?",
+     "level": 2
+    },
+    {
+     "id": "is-the-port-complete",
+     "text": "Is the Port Complete?",
+     "level": 2
+    },
+    {
+     "id": "does-online-play-really-work",
+     "text": "Does Online Play Really Work?",
+     "level": 2
+    },
+    {
+     "id": "how-well-does-it-run",
+     "text": "How Well Does It Run?",
+     "level": 2
+    },
+    {
+     "id": "controller-or-mouse",
+     "text": "Controller or Mouse?",
+     "level": 2
+    },
+    {
+     "id": "is-it-safe-to-install",
+     "text": "Is It Safe to Install?",
+     "level": 2
+    },
+    {
+     "id": "where-do-i-start",
+     "text": "Where Do I Start?",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "features",
+   "slug": "performance-and-fps",
+   "title": "Bloodborne PC Performance and FPS",
+   "date": "2026-10-18",
+   "category": "features",
+   "headings": [
+    {
+     "id": "the-unlock-what-frame-rate-changes",
+     "text": "The Unlock: What Frame Rate Changes",
+     "level": 2
+    },
+    {
+     "id": "hardware-tiers-honestly-mapped",
+     "text": "Hardware Tiers, Honestly Mapped",
+     "level": 2
+    },
+    {
+     "id": "the-settings-that-matter",
+     "text": "The Settings That Matter",
+     "level": 2
+    },
+    {
+     "id": "the-linux-port",
+     "text": "The Linux Port",
+     "level": 2
+    },
+    {
+     "id": "the-bottom-line",
+     "text": "The Bottom Line",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "features",
+   "slug": "qol-improvements",
+   "title": "Bloodborne PC QoL Improvements",
+   "date": "2026-10-18",
+   "category": "features",
+   "headings": [
+    {
+     "id": "real-settings-finally",
+     "text": "Real Settings, Finally",
+     "level": 2
+    },
+    {
+     "id": "display-and-readability",
+     "text": "Display and Readability",
+     "level": 2
+    },
+    {
+     "id": "input-qol",
+     "text": "Input QoL",
+     "level": 2
+    },
+    {
+     "id": "the-fixes-and-the-fixes-to-come",
+     "text": "The Fixes and the Fixes to Come",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "guide",
+   "slug": "bloodborne-pc-guide",
+   "title": "Bloodborne PC: The Complete Guide",
+   "badge": "Start Here",
+   "date": "2026-10-18",
+   "category": "guide",
+   "headings": [
+    {
+     "id": "the-eleven-year-wait",
+     "text": "The Eleven-Year Wait",
+     "level": 2
+    },
+    {
+     "id": "what-bbport-actually-is",
+     "text": "What bbport Actually Is",
+     "level": 2
+    },
+    {
+     "id": "performance-what-to-expect",
+     "text": "Performance: What to Expect",
+     "level": 2
+    },
+    {
+     "id": "online-play-the-ports-boldest-claim",
+     "text": "Online Play: The Port's Boldest Claim",
+     "level": 2
+    },
+    {
+     "id": "controls-controller-and-mouse",
+     "text": "Controls: Controller and Mouse",
+     "level": 2
+    },
+    {
+     "id": "who-this-is-for",
+     "text": "Who This Is For",
+     "level": 2
+    },
+    {
+     "id": "this-wikis-promise",
+     "text": "This Wiki's Promise",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "guide",
+   "slug": "controls-and-settings",
+   "title": "Bloodborne PC Controls and Settings",
+   "date": "2026-10-18",
+   "category": "guide",
+   "headings": [
+    {
+     "id": "controller-the-native-tongue",
+     "text": "Controller: The Native Tongue",
+     "level": 2
+    },
+    {
+     "id": "mouse-the-experiment-that-works",
+     "text": "Mouse: The Experiment That Works",
+     "level": 2
+    },
+    {
+     "id": "keyboard-and-remapping",
+     "text": "Keyboard and Remapping",
+     "level": 2
+    },
+    {
+     "id": "the-settings-worth-a-day-one-pass",
+     "text": "The Settings Worth a Day-One Pass",
+     "level": 2
+    },
+    {
+     "id": "the-feel-summarized",
+     "text": "The Feel, Summarized",
+     "level": 2
+    },
+    {
+     "id": "choosing-your-input-decided",
+     "text": "Choosing Your Input, Decided",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "guide",
+   "slug": "how-to-install",
+   "title": "How to Install the Bloodborne PC Port (bbport)",
+   "date": "2026-10-18",
+   "category": "guide",
+   "headings": [
+    {
+     "id": "sources-where-bbport-comes-from",
+     "text": "Sources: Where bbport Comes From",
+     "level": 2
+    },
+    {
+     "id": "prerequisites",
+     "text": "Prerequisites",
+     "level": 2
+    },
+    {
+     "id": "the-install-sequence",
+     "text": "The Install Sequence",
+     "level": 2
+    },
+    {
+     "id": "first-run-fixes",
+     "text": "First-Run Fixes",
+     "level": 2
+    },
+    {
+     "id": "session-habits-worth-forming",
+     "text": "Session Habits Worth Forming",
+     "level": 2
+    },
+    {
+     "id": "the-first-evening-planned",
+     "text": "The First Evening, Planned",
+     "level": 2
+    }
+   ]
+  },
+  {
+   "contentType": "guide",
+   "slug": "online-play",
+   "title": "Bloodborne PC Online Play: Co-op, Invasions and Matchmaking",
+   "date": "2026-10-18",
+   "category": "guide",
+   "headings": [
+    {
+     "id": "the-matchmaking-website",
+     "text": "The Matchmaking Website",
+     "level": 2
+    },
+    {
+     "id": "co-op-the-bells-ring-again",
+     "text": "Co-op: The Bells Ring Again",
+     "level": 2
+    },
+    {
+     "id": "invasions-the-dark-side-of-the-bells",
+     "text": "Invasions: The Dark Side of the Bells",
+     "level": 2
+    },
+    {
+     "id": "whats-restored-whats-rough",
+     "text": "What's Restored, What's Rough",
+     "level": 2
+    },
+    {
+     "id": "etiquette-and-the-second-life-community",
+     "text": "Etiquette and the Second-Life Community",
+     "level": 2
+    },
+    {
+     "id": "getting-started-with-online-step-by-step",
+     "text": "Getting Started with Online, Step by Step",
+     "level": 2
+    }
+   ]
+  }
+ ]
+}
