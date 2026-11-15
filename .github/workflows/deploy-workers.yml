@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm install --no-audit --no-fund
+      - run: npm install --no-audit --no-fund --legacy-peer-deps
       - name: Generate content manifest
         run: node scripts/gen-content-manifest.mjs
       - name: Build OpenNext bundle
