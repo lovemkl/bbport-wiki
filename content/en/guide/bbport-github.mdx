@@ -1,0 +1,66 @@
+export const metadata = {
+  title: "bbport GitHub: the Bloodborne PC Port's Repository, Releases, and Downloads Explained",
+  description:
+    "The bbport GitHub project (deadinside28/bloodborne_pc) explained: what the repository is, release versions 0.6 and 0.7, the Linux and Windows download files, GPL-2.0 licensing, and how to avoid fake mirrors.",
+  category: "guide",
+  date: "2026-11-19",
+};
+
+The bbport GitHub repository — **deadinside28/bloodborne_pc** — is the project's single source of truth: the code, the releases, the documentation, and the checksums that tell a real download from a fake one. If you are installing Bloodborne PC, everything starts here, and everything that does not start here deserves suspicion. This guide explains what the repository actually is, how its releases are versioned, which download files fit which platforms, what the license allows, and how the project's relationship to shadPS4 — the question everyone asks first — really works.
+
+## What the Repository Is
+
+The repository hosts **bbport: a native Linux and Windows port of Bloodborne**. The project describes itself as the counterpart of Wine + DXVK for a single game: Bloodborne (v1.09) running on an x86-64 PC, with the game's original executable executing directly on the CPU, a purpose-built runtime replacing the PS4 system libraries, and graphics translated to Vulkan by the port's own renderer and shader translator. That single-game focus is what separates it from [the emulator approach](/comparisons/bbport-vs-shadps4) — bbport is not a PS4 emulator, it is a port of one game.
+
+The repository's README opens with the sentence the community wishes it did not need, in full capitals: **THIS PROJECT IS NOT RELATED TO SHADPS4.** The renderer and shader translator began from shadPS4's code and were rewritten, but the projects are entirely separate — different goals, different teams, different support channels. All questions about bbport go to its own Discord server, linked from the README, and explicitly not to the shadPS4 server.
+
+The project is open source under **GPL-2.0**, carries a four-figure star count on GitHub, and — critically for an unofficial port — ships **no game files whatsoever**. You need your own dump of Bloodborne with update 1.09; the [install guide](/guide/how-to-install) covers what that means and which regional editions work.
+
+## Releases: What's Shipped and When
+
+The release history tells the project's story in three quick chapters:
+
+| Version | Date | What it delivered |
+|---|---|---|
+| 0.6-pre1 | October 15, 2026 | First public release-channel build, AppImage format |
+| 0.6 | October 19, 2026 | The new memory/translation model becomes the default |
+| 0.7 | October 28, 2026 | Windows support arrives; the old 0.3-era memory model removed; FSR 4.1.1 added |
+
+Version 0.7 is the milestone release: it is where the port became a **dual-platform project**, shipping Linux and Windows builds from the same codebase, and where the memory and GPU-translation model was consolidated — the old model from version 0.3 was removed entirely, leaving one modern path. The upscaling stack in 0.7 spans **AMD FSR 3.1, FSR 4, and FSR 4.1.1, plus NVIDIA DLSS and DLSS Frame Generation**, and the release carries co-op support via BBSC — the technical basis for [playing online](/guide/online-play). For how all this translates to frame rates, the [performance guide](/features/performance-and-fps) has the community's measured results.
+
+## The Download Files, Decoded
+
+Each release ships a small, deliberate set of artifacts — and knowing what each one is keeps you off the fake-mirror ecosystem that grows around any popular unofficial port:
+
+- **Bloodborne-bbport-0.7-linux-x86_64.tar.zst** — the Linux archive build
+- **Bloodborne-bbport-0.7-x86_64.AppImage** — the single-file Linux desktop build
+- **Bloodborne-bbport-0.7-windows-x64.zip** — the Windows build, new in 0.7
+- **SHA256SUMS** — checksums for every artifact
+
+That SHA256SUMS file is your best friend: after downloading, verify your file's checksum against it. The real project's releases come exclusively from the GitHub releases page; anything circulating through aggregator sites, "fast download" mirrors, or Discord DMs is counterfeit by definition — and the [fake port warning signs](/guide/how-to-install) are worth a read before you click anything that is not GitHub.
+
+## License, Legality, and the Bring-Your-Own-Dump Rule
+
+bbport is GPL-2.0 open source, and its legal posture is clearly documented: the project is not affiliated with Sony Interactive Entertainment, FromSoftware, or AMD, and it ships **no game files, code, or assets**. The game itself must come from your own dump of Bloodborne updated to version 1.09 — any retail edition works because the regional releases share the same executable. This is the standard preservation-scene arrangement: open-source tooling and legally gray game acquisition live in separate lanes, and the repository deliberately keeps them that way. Our [FAQ](/faq/faq) gives the plain-language version of what that means for you.
+
+## Why the Repository Matters to the Community
+
+The GitHub repo is also where the port's credibility lives. Every claim on this wiki — the [native architecture](/guide/bloodborne-pc-guide), the Vulkan translation approach, the upscaling stack — is checkable against public code and release notes. That transparency is rare in the unofficial-port world, and it is why the project earned its audience quickly: the October 2026 release wave generated mainstream coverage, but the repository let players verify everything the coverage claimed. Bookmark the repository, watch the releases page for 0.8 and beyond, and treat it as the only channel that matters for [installing and updating the port](/guide/how-to-install).
+
+## Frequently Asked Questions
+
+**What is the bbport GitHub repository?** deadinside28/bloodborne_pc — the official home of bbport, the native Linux and Windows port of Bloodborne (v1.09), licensed GPL-2.0.
+
+**Is bbport related to shadPS4?** No. The README states it in capitals: the projects are unrelated, despite the shader-translation code's shared ancestry. bbport support runs through its own Discord server.
+
+**Which release should I download?** The latest — 0.7 as of late October 2026 — choosing Linux (AppImage or tar.zst) or Windows (ZIP) for your platform, then verifying against SHA256SUMS.
+
+**Does the repository include the game?** No. bbport ships no game files; you need your own dump of Bloodborne update 1.09 from any retail edition.
+
+**Is bbport free?** The port is free and open source under GPL-2.0. Anyone charging for it is running a scam — the real project's releases are on GitHub at no cost.
+
+**Where do new versions appear?** On the repository's releases page. GitHub is the only legitimate distribution channel for the project.
+
+## The Bottom Line
+
+The bbport GitHub repository is the whole project in one place: native-port code under GPL-2.0, honest release notes, checksummed Linux and Windows builds, and a bring-your-own-dump rule that keeps the legal lanes separate. Download from GitHub only, verify against SHA256SUMS, and you are three steps from [your first evening in Yharnam](/guide/how-to-install).

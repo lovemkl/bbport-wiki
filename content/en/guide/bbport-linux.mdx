@@ -1,0 +1,69 @@
+export const metadata = {
+  title: "bbport on Linux: the Native Bloodborne Port for Linux, Explained",
+  description:
+    "bbport runs Bloodborne natively on Linux — the x86-64 game code executes directly with Vulkan graphics translation. What the Linux release includes, how it differs from the Windows build, and how it compares to running the game under Proton or shadPS4.",
+  category: "guide",
+  date: "2026-11-19",
+};
+
+Linux was bbport's first home. The native Bloodborne port began as a Linux project — and since version 0.7, released October 28, 2026, it ships first-class builds for both Linux and Windows from the same codebase. On Linux, bbport does something no compatibility layer quite does: the game's original x86-64 executable runs **directly** on the CPU, a purpose-built runtime replaces the PS4 system libraries, and the graphics are translated to **Vulkan** — no Wine, no Proton, no emulator sandbox between you and Yharnam. This guide explains what the Linux build actually is, what you need before installing, how the release files fit together, and when Linux is — and is not — the right platform for playing Bloodborne on the machine you own.
+
+## What "Native" Means on Linux
+
+bbport is easiest to understand as the counterpart of Wine and DXVK, built for a single game. As in Wine, Bloodborne's x86-64 code executes on the CPU directly — but instead of translating Windows API calls, bbport's custom runtime stands in for the PS4's system libraries, the layer the game was originally built against. As in DXVK, the graphics pipeline is translated to Vulkan — but by bbport's own renderer and shader translator, written for this one game (they started from shadPS4's code and were rewritten, which is why comparisons with [shadPS4](/comparisons/bbport-vs-shadps4) come up so often).
+
+The practical consequences for Linux players are the reason this project matters:
+
+- **No Windows translation layer.** Wine and Proton are brilliant engineering, but they add a second translation surface. bbport removes it — the game talks to a runtime built for exactly one executable.
+- **Vulkan end to end.** Vulkan is the graphics API Linux gaming is built around, so the port's renderer speaks your platform's native language with no middleware.
+- **Modern upscaling on your terms.** The renderer supports temporal upscaling with AMD FSR 3.1, FSR 4, FSR 4.1.1, NVIDIA DLSS, and DLSS Frame Generation — on the GPU vendor you actually have.
+
+## What You Need Before Installing
+
+bbport ships no game content. The port requires **your own dump of Bloodborne with update 1.09** — the game's final patch version. Any retail release works, because the shared executable is the same across regions: CUSA03173 (the European Game of the Year edition), CUSA00900 (the US release), and other regional SKUs carry the same game executable that bbport targets. Legally, this is the same bring-your-own-dump principle the preservation scene has always followed: the port is a GPL-2.0-licensed open-source project that is not affiliated with Sony or FromSoftware, and it exists in the tolerated gray zone all unofficial preservation work occupies — [our FAQ](/faq/faq) covers the honest summary.
+
+On the hardware side, the practical requirements are what you would expect of a Vulkan application: a GPU with current Vulkan support and up-to-date drivers. The port's performance story on modest hardware is well documented — [community results show 60 FPS on low-end machines](/features/performance-and-fps) and triple-digit frames on mid-range GPUs — and driver freshness matters as much on Linux as anywhere: before troubleshooting anything, update your Mesa or vendor driver stack first. The port's [install guide](/guide/how-to-install) covers the full preparation checklist, most of which applies equally to Linux.
+
+## The Linux Release Files, Explained
+
+Version 0.7 ships three Linux artifacts, each for a different situation:
+
+- **Bloodborne-bbport-0.7-linux-x86_64.tar.zst** — the plain archive build; extract it anywhere and run from the directory. This is the most transparent option and the one that fits unusual setups best.
+- **Bloodborne-bbport-0.7-x86_64.AppImage** — the single-file distribution format Linux desktop users know well: one executable, no extraction step, runs on virtually any distribution. This is the simplest path for most people.
+- **SHA256SUMS** — checksums for every artifact. Verify your download against them; for unofficial software, the checksum step is not optional ceremony, it is how you confirm the file you have is the file the project shipped.
+
+Windows joined the release lineup at 0.7 — the same version ships a **windows-x64 ZIP** alongside the Linux artifacts — but Linux remains the port's home turf: it is the platform the project was designed around, and the platform where its one-game runtime makes the most architectural sense.
+
+## Getting From Files to First Boot
+
+The short version of the journey, with the [full install guide](/guide/how-to-install) carrying the detail: pick your release file (AppImage for simplicity, tar.zst for control), verify it against SHA256SUMS, place your own Bloodborne 1.09 dump where the port expects game data, and launch. First-boot troubleshooting on Linux has a short list of usual suspects — driver freshness before everything else, then Vulkan runtime setup, then the game data layout. The project's support channel is its own Discord server (linked from the project's README) — explicitly not the shadPS4 server, a distinction the project's own documentation underlines in capital letters.
+
+If it boots, what you get is the game itself: the full [Bloodborne PC experience](/guide/bloodborne-pc-guide), with real graphics settings, the port's [quality-of-life improvements](/features/qol-improvements), and — since the port supports co-op via BBSC — even [online play](/guide/online-play) on Linux.
+
+## Linux vs Windows vs shadPS4: Where bbport Fits
+
+Linux players have three realistic routes to Bloodborne, and they deserve an honest comparison:
+
+- **bbport native Linux** — the game's code runs directly, Vulkan native, no translation layer between the game and your system. The purpose-built option, and the one this guide covers.
+- **bbport under Windows** — the same port, same features, for the other half of the release lineup. Relevant if you dual-boot.
+- **shadPS4** — the general PS4 emulator approach: a broader project emulating console hardware, running Bloodborne among other titles. It is the right tool for a PS4 library; bbport is the right tool for this one game. The [full comparison](/comparisons/bbport-vs-shadps4) breaks down where each wins — and why the projects, despite the shared ancestry of some shader-translation code, are separate efforts entirely.
+
+For a Linux user who owns Bloodborne and wants to play it on this machine: bbport native is the route built for you.
+
+## Frequently Asked Questions
+
+**Does bbport really run natively on Linux?** Yes — Linux was the port's original platform. Version 0.7 (October 28, 2026) ships Linux builds (tar.zst and AppImage) alongside the newer Windows build, from the same codebase.
+
+**Do I need Wine or Proton for bbport?** No. That is the point of the project: the game's x86-64 code runs directly, with a custom runtime replacing the PS4 system libraries and Vulkan replacing the graphics translation chain.
+
+**Where do I get the game files?** From your own copy of Bloodborne — any retail dump updated to version 1.09 works, since regional editions share the same executable. The port ships no game content.
+
+**Is the Linux version missing features the Windows build has?** No — 0.7 ships both platforms from the same codebase, including FSR 3.1/FSR 4/FSR 4.1.1, DLSS, DLSS Frame Generation, and BBSC co-op support.
+
+**Is bbport legal?** It is an open-source (GPL-2.0) project that ships no copyrighted game content and is not affiliated with Sony or FromSoftware — the legality questions live with how you obtain your game dump, which our [FAQ](/faq/faq) addresses directly.
+
+**Where do I get help?** The project's own Discord server, linked from its README — and deliberately not the shadPS4 server, since the projects are unrelated.
+
+## The Bottom Line
+
+For Linux gamers, bbport is the rarest kind of port: one built for your platform first, speaking Vulkan natively, with no translation layers to tune. Bring your own Bloodborne 1.09 dump, verify your download against the SHA256SUMS, and [Yharnam is waiting](/guide/bloodborne-pc-guide) — on the machine you already own.
